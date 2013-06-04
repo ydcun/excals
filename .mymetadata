@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="excals"
+  id="myeclipse.1370336095576"
+  context-root="/excals"
+  j2ee-spec="5.0"
+  archive="excals.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
