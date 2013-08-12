@@ -47,17 +47,17 @@ public class PoiTest {
 	public static void main(String[] args) {
 		List list = new ArrayList();
 		Ueser ueser = new Ueser();
-		ueser.setRole("¹ÜÀíÔ±");
+		ueser.setRole("ç®¡ç†å‘˜");
 		ueser.setName("DDDDD");
-		ueser.setApplication("ÏÃÃÅÒÆ¶¯");
+		ueser.setApplication("å¦é—¨ç§»åŠ¨");
 
 		Ueser ueser1 = new Ueser();
-		ueser1.setApplication("ÏÃÃÅµçĞÅ");
+		ueser1.setApplication("å¦é—¨ç”µä¿¡");
 		ueser1.setName("DDDDEEE");
-		ueser1.setRole("ÆÕÍ¨Ö°Ô±");
+		ueser1.setRole("æ™®é€šèŒå‘˜");
 		list.add(ueser);
 		list.add(ueser1);
-		String[] str = new String[] { "Ó¦ÓÃ", "ĞÕÃû", "½ÇÉ«" };
+		String[] str = new String[] { "åº”ç”¨", "å§“å", "è§’è‰²" };
 		try {
 			create2007Excel(str, list, Ueser.class);
 		} catch (Exception e) {
@@ -69,61 +69,61 @@ public class PoiTest {
 	public void create2007Excel() throws FileNotFoundException, IOException {
 		// POIFSFileSystem fs = new POIFSFileSystem(new FileInputStream(new
 		// File(path_2007)));
-		XSSFWorkbook wb = new XSSFWorkbook();// ´´½¨ÎÄµµ¶ÔÏó workbook
-		XSSFSheet sheet = wb.createSheet();// ´´½¨±íµ¥sheet
-		// sheet.setColumnHidden(columnIndex, hidden) ÉèÖÃ±íµ¥µÄĞĞ¸ß
-		// columnIndexµÚ¼¸ĞĞ£¬´Ó0¿ªÊ¼
-		// sheet.setColumnWidth(columnIndex, width) ÉèÖÃ±íµ¥µÄĞĞ¿í
-		XSSFRow row = sheet.createRow(0);// ´´½¨Ò»¸öĞĞ¶ÔÏó ²ÎÊı±íÊ¾µÚ¼¸ĞĞ£¬´Ó0¿ªÊ¼
-		// row.setRowNum(rowIndex) ÉèÖÃĞĞÊı
-		// row.setHeightInPoints(height) ÉèÖÃĞĞ¸ß ÒÔpxÎªµ¥Î»
-		XSSFCellStyle style = wb.createCellStyle();// ´´½¨ÑùÊ½¶ÔÏó
-		XSSFFont font = wb.createFont();// ´´½¨×ÖÌå¶ÔÏó
-		// font.setFontHeightInPoints(height) ÉèÖÃ×ÖÌå´óĞ¡ pxÎªµ¥Î»
-		// font.setColor(color) ÉèÖÃ×ÖÌåÑÕÉ«
-		// font.setBoldweight(HSSFFont.BOLDWEIGHT_BOLD) ÉèÖÃ×ÖÌå´ÖÏ¸
-		// font.setFontName("ºÚÌå"); ÉèÖÃÎªºÚÌå
-		style.setFont(font);// ÉèÖÃÎª×ÖÌå¼ÇµÃÒª¼ÓÈëµ½ÑùÊ½¶ÔÏóÖĞ
-		// style.setAlignment(XSSFCellStyle.ALIGN_CENTER_SELECTION);//Ë®Æ½¾ÓÖĞ¶ÔÆë
-		style.setBorderTop(HSSFCellStyle.BORDER_THICK);// ¶¥²¿±ß¿ò´ÖÏß
+		XSSFWorkbook wb = new XSSFWorkbook();// åˆ›å»ºæ–‡æ¡£å¯¹è±¡ workbook
+		XSSFSheet sheet = wb.createSheet();// åˆ›å»ºè¡¨å•sheet
+		// sheet.setColumnHidden(columnIndex, hidden) è®¾ç½®è¡¨å•çš„è¡Œé«˜
+		// columnIndexç¬¬å‡ è¡Œï¼Œä»0å¼€å§‹
+		// sheet.setColumnWidth(columnIndex, width) è®¾ç½®è¡¨å•çš„è¡Œå®½
+		XSSFRow row = sheet.createRow(0);// åˆ›å»ºä¸€ä¸ªè¡Œå¯¹è±¡ å‚æ•°è¡¨ç¤ºç¬¬å‡ è¡Œï¼Œä»0å¼€å§‹
+		// row.setRowNum(rowIndex) è®¾ç½®è¡Œæ•°
+		// row.setHeightInPoints(height) è®¾ç½®è¡Œé«˜ ä»¥pxä¸ºå•ä½
+		XSSFCellStyle style = wb.createCellStyle();// åˆ›å»ºæ ·å¼å¯¹è±¡
+		XSSFFont font = wb.createFont();// åˆ›å»ºå­—ä½“å¯¹è±¡
+		// font.setFontHeightInPoints(height) è®¾ç½®å­—ä½“å¤§å° pxä¸ºå•ä½
+		// font.setColor(color) è®¾ç½®å­—ä½“é¢œè‰²
+		// font.setBoldweight(HSSFFont.BOLDWEIGHT_BOLD) è®¾ç½®å­—ä½“ç²—ç»†
+		// font.setFontName("é»‘ä½“"); è®¾ç½®ä¸ºé»‘ä½“
+		style.setFont(font);// è®¾ç½®ä¸ºå­—ä½“è®°å¾—è¦åŠ å…¥åˆ°æ ·å¼å¯¹è±¡ä¸­
+		// style.setAlignment(XSSFCellStyle.ALIGN_CENTER_SELECTION);//æ°´å¹³å±…ä¸­å¯¹é½
+		style.setBorderTop(HSSFCellStyle.BORDER_THICK);// é¡¶éƒ¨è¾¹æ¡†ç²—çº¿
 
-		// style.setTopBorderColor(HSSFCellStyle.);// ÉèÖÃÎªºìÉ«
+		// style.setTopBorderColor(HSSFCellStyle.);// è®¾ç½®ä¸ºçº¢è‰²
 
-		style.setBorderBottom(HSSFCellStyle.BORDER_DOUBLE);// µ×²¿±ß¿òË«Ïß
+		style.setBorderBottom(HSSFCellStyle.BORDER_DOUBLE);// åº•éƒ¨è¾¹æ¡†åŒçº¿
 
-		style.setBorderLeft(HSSFCellStyle.BORDER_MEDIUM);// ×ó±ß±ß¿ò
+		style.setBorderLeft(HSSFCellStyle.BORDER_MEDIUM);// å·¦è¾¹è¾¹æ¡†
 
-		style.setBorderRight(HSSFCellStyle.BORDER_MEDIUM);// ÓÒ±ß±ß¿ò
+		style.setBorderRight(HSSFCellStyle.BORDER_MEDIUM);// å³è¾¹è¾¹æ¡†
 
 	}
 
 	public static void create2007Excel(Object[] head, List list, Class clas)
 			throws Exception {
-		// ´´½¨ÎÄµµ¶ÔÏó workbook
+		// åˆ›å»ºæ–‡æ¡£å¯¹è±¡ workbook
 		XSSFWorkbook wb = new XSSFWorkbook();
-		XSSFSheet sheet = wb.createSheet();// ´´½¨±íµ¥sheet
+		XSSFSheet sheet = wb.createSheet();// åˆ›å»ºè¡¨å•sheet
 		BeanInfo info = Introspector.getBeanInfo(Ueser.class, Object.class);
 		PropertyDescriptor[] des = info.getPropertyDescriptors();
-		XSSFRow rowHead = sheet.createRow(0);// ´´½¨µÚÒ»ĞĞ¶ÔÏó
-		CellStyle style = wb.createCellStyle();// ´´½¨ÑùÊ½¶ÔÏó
-		style.setBorderBottom((short) 1);// ¶¥²¿±ß¿ò´ÖÏß
-		style.setBorderTop((short) 1);// ¶¥²¿±ß¿ò´ÖÏß
-		style.setBorderLeft((short) 1);// ¶¥²¿±ß¿ò´ÖÏß
-		style.setBorderRight((short) 1);// ¶¥²¿±ß¿ò´ÖÏß
+		XSSFRow rowHead = sheet.createRow(0);// åˆ›å»ºç¬¬ä¸€è¡Œå¯¹è±¡
+		CellStyle style = wb.createCellStyle();// åˆ›å»ºæ ·å¼å¯¹è±¡
+		style.setBorderBottom((short) 1);// é¡¶éƒ¨è¾¹æ¡†ç²—çº¿
+		style.setBorderTop((short) 1);// é¡¶éƒ¨è¾¹æ¡†ç²—çº¿
+		style.setBorderLeft((short) 1);// é¡¶éƒ¨è¾¹æ¡†ç²—çº¿
+		style.setBorderRight((short) 1);// é¡¶éƒ¨è¾¹æ¡†ç²—çº¿
 		style.setBottomBorderColor(IndexedColors.BLACK.getIndex());
-		// ÉèÖÃ±íÍ·
+		// è®¾ç½®è¡¨å¤´
 		for (int i = 0; i < head.length; i++) {
 			XSSFCell cell = rowHead.createCell(i);
 			cell.setCellValue(head[i].toString());
 			cell.setCellStyle(style);
 			// XSSFCellStyle cellStyle = cell.getCellStyle();
-			// XSSFFont font = wb.createFont();// ´´½¨×ÖÌå¶ÔÏó
-			// /font.setFontName("ºÚÌå"); // ÉèÖÃÎªºÚÌå
+			// XSSFFont font = wb.createFont();// åˆ›å»ºå­—ä½“å¯¹è±¡
+			// /font.setFontName("é»‘ä½“"); // è®¾ç½®ä¸ºé»‘ä½“
 			// font.setBoldweight(XSSFFont.BOLDWEIGHT_BOLD);
 			// cellStyle.setFont(font);
 		}
 		for (int i = 1; i < list.size() + 1; i++) {
-			XSSFRow rowBody = sheet.createRow(i);// ´´½¨±íÌåÃ¿Ò»ĞĞ¶ÔÏó
+			XSSFRow rowBody = sheet.createRow(i);// åˆ›å»ºè¡¨ä½“æ¯ä¸€è¡Œå¯¹è±¡
 			for (int j = 0; j < des.length; j++) {
 
 				Method method = des[j].getReadMethod();
@@ -143,14 +143,14 @@ public class PoiTest {
 	 * public static void test(String path) throws Exception { POIFSFileSystem
 	 * fs = new POIFSFileSystem(new FileInputStream(new File( path)));
 	 * HSSFWorkbook wb = new HSSFWorkbook(fs);//
-	 * ÓÉPOIFSFileSystem¹¹½¨Ò»¸öHSSFWorkbookÎÄµµ¶ÔÏó HSSFSheet sheet =
-	 * wb.getSheetAt(0);// ±íµ¥ for (int i = 0; i < 10; i++) { HSSFRow row =
-	 * sheet.createRow(i);// ĞĞ // µ¥Ôª¸ñ // row.createCell(0).setCellValue(i); //
+	 * ç”±POIFSFileSystemæ„å»ºä¸€ä¸ªHSSFWorkbookæ–‡æ¡£å¯¹è±¡ HSSFSheet sheet =
+	 * wb.getSheetAt(0);// è¡¨å• for (int i = 0; i < 10; i++) { HSSFRow row =
+	 * sheet.createRow(i);// è¡Œ // å•å…ƒæ ¼ // row.createCell(0).setCellValue(i); //
 	 * row.createCell(1).setCellValue("dfdfdfd"); //
 	 * row.createCell(2).setCellValue("rrrr"); HSSFCell cell =
 	 * row.createCell((short) (0)); cell.setCellValue(i); HSSFCell cell2 =
-	 * row.createCell((short) (1)); cell2.setCellValue("ÕÅÈı"); HSSFCell cell3 =
-	 * row.createCell((short) (2)); cell3.setCellValue("ºÃºÃºÃ"); }
+	 * row.createCell((short) (1)); cell2.setCellValue("å¼ ä¸‰"); HSSFCell cell3 =
+	 * row.createCell((short) (2)); cell3.setCellValue("å¥½å¥½å¥½"); }
 	 * FileOutputStream out = new FileOutputStream(path, true); wb.write(out);
 	 * out.close(); }
 	 */
